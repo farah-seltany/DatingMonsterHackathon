@@ -1,0 +1,67 @@
+<div class="background">
+    <div class="left">
+        <div style="text-align: center;">
+            <h1>Dating Monster</h1>
+
+            <h3>Quel type de partenaire recherchez-vous ?</h3>
+        </div>
+
+    <form >
+        <div >
+            <div class="gender">
+            <mat-form-field class="formGender">
+                <h3><mat-label required>Vous êtes intéressé par ?</mat-label></h3>
+                <mat-select [(value)]="selected" required color="warn">
+                    <mat-option value="Hommes" id='homme'>Les hommes</mat-option>
+                    <mat-option value="Femmes" id='femme'>Les femmes</mat-option>
+                    <mat-option value="Autres" id='autre'>Les autres</mat-option>
+                </mat-select>
+            </mat-form-field>
+                
+            <p>Vous avez selectionné: {{selected}}</p><br /><br />
+            <h3><label>Quel âge doit avoir votre partenaire ?</label></h3><br />
+            <mat-slider
+                thumbLabel
+                [displayWith]="formatLabel"
+                tickInterval="100"
+                min="100"
+                max="1000"
+                required>
+            </mat-slider><br />  
+            </div>
+        </div>
+        <div class="gender">
+            <label>Quel est le niveau de romantisme de votre partenaire ?</label><br />
+            <mat-slider
+            thumbLabel
+            [displayWith]="formatLabel"
+            tickInterval="2"
+            min="0"
+            max="10"
+            required>
+        </mat-slider><br />  
+            
+            <h3><label>A quel point doit-il être sportif ?</label></h3><br />  
+            <mat-slider
+            thumbLabel
+            [displayWith]="formatLabel"
+            tickInterval="2"
+            min="0"
+            max="10"
+            required>
+        </mat-slider><br />  
+        <button class="buttonMatch" *ngIf="preForms" mat-raised-button (click)='sendContact()'> Match !</button>
+        </div>
+         
+    </form>
+    </div>
+       
+                
+                    <div *ngIf="cardMonster" class="right">
+                        <h3>Vous avez rendez-vous avec ...</h3>
+                            <img src='https://nsa40.casimages.com/img/2019/10/23/191023045322835216.jpg'/><br/><br/>
+                            <button routerLink='/game' mat-raised-button > C'est parti !</button>
+                    </div>
+       
+
+</div>

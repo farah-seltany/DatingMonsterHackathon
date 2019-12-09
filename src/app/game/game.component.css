@@ -1,0 +1,47 @@
+.gameContainer{
+    background-image: url(../../assets/Img/backgroundBar.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+    padding: auto;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+    opacity: 0.8;
+    -webkit-filter: grayscale(25%);
+    filter: grayscale(25%);
+}
+img{
+    width: 550px;
+    height: 900px;
+}
+
+.monsterJauge
+{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-right: 5%;
+    margin-top: 5%;
+    width: 35%;
+}
+
+.jauge
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.jauge img
+{
+    width: 30px;
+    height: auto;
+}

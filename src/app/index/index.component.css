@@ -1,0 +1,46 @@
+.indexContainer {
+    background-image: url(https://ae01.alicdn.com/kf/HTB16Nc1ayDxK1Rjy1zcq6yGeXXax/Evening-Village-Scary-Pumpkin-Fence-Windmill-photo-backdrop-High-quality-Computer-print-Halloween-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 100vh;
+    margin : 0;
+    padding: auto;
+    display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: stretch;
+    }
+  button{
+      width: 15%;
+      height: 10%;
+      font-size: 32px;
+      border-radius: 5%;
+    }
+  
+    button:hover{
+      width: 17%;
+      height: 12%;
+      font-size: 35px;
+      background-color: indianred;
+      cursor: pointer;
+    }
+  
+  
+  
+  p
+  {
+    color: indianred;
+    font-style: italic;
+    font-family: 'Title';
+    font-size: 10em;
+    text-align: center;
+  }
+  
+  
+  @font-face
+  {
+      font-family: 'Title';
+      src: url('../../assets/Police/youmurdererbb_reg.ttf');
+  }
